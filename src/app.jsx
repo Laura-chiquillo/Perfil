@@ -2,11 +2,9 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import { ScrollToTop } from './components/scroll-to-top'
-import Home from './routes/home'
 import About from './routes/about'
 import Contact from './routes/contact'
 import Faqs from './routes/faqs'
-import Support from './routes/support'
 
 export default function App() {
   /**
@@ -21,11 +19,9 @@ export default function App() {
     <BrowserRouter basename={basename}>
       <ScrollToTop>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="faqs" element={<Faqs />} />
-          <Route path="support" element={<Support />} />
+          <Route path="sobremi" element={<About />} />
+          <Route path="contacto" element={<Contact />} />
+          <Route path="proyectos" element={<Faqs />} />
         </Routes>
       </ScrollToTop>
     </BrowserRouter>

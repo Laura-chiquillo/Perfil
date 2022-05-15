@@ -1,5 +1,5 @@
 import React from 'react'
-
+import proyecto from '../imagenes/proyectos.jpg'
 import { Layout } from '../components/layout'
 import { Article, ArticleContent, ArticleMedia } from '../components/article'
 
@@ -12,7 +12,7 @@ export default function FaqsPage() {
         </ArticleContent>
 
         <ArticleMedia>
-          <img src="https://picsum.photos/420/640" alt="Lorem Picsum" />
+          <img src={proyecto} style={{height:"300px", width:"600px"}} />
         </ArticleMedia>
       </Article>
     </Layout>

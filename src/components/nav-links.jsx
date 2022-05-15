@@ -2,10 +2,9 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const NAV_LINKS = [
-  { name: 'Contact', to: '/contact' },
-  { name: 'About Us', to: '/about' },
-  { name: "FAQ's", to: '/faqs' },
-  { name: 'Support', to: '/support' },
+  { name: 'Contactar', to: '/contacto' },
+  { name: 'Sobre mi', to: '/sobremi' },
+  { name: "Mis proyectos", to: '/proyectos' },
 ]
 export function NavLinks({ className }) {
   return (
