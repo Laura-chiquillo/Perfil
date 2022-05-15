@@ -2,8 +2,8 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const NAV_LINKS = [
+  { name: 'Sobre mi', to: '/' },
   { name: 'Contactar', to: '/contacto' },
-  { name: 'Sobre mi', to: '/sobremi' },
   { name: "Mis proyectos", to: '/proyectos' },
 ]
 export function NavLinks({ className }) {
