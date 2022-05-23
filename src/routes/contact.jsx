@@ -8,7 +8,7 @@ export default function ContactPage() {
   return (
     <Layout>
       <Article>
-        <ArticleContent title="">
+        <ArticleContent title="Contacto">
           <p>Contactame 7w7</p>
         </ArticleContent>
 

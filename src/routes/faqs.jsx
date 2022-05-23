@@ -1,31 +1,45 @@
 import React from 'react'
 import proyecto from '../imagenes/proyectos.jpg'
-import { Layout } from '../components/layout'
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
+import ProyectsLayout  from '../components/proyectsLayout'
 
-const items = [
-  <div className="item absolute w-full h-full border-solid border-x-secondary-700" data-value="1">
-    <img src={proyecto} alt="" />
-  </div>,
-  <div className="item absolute border-solid border-x-secondary-700" data-value="2">
-    <img src={proyecto} alt="" />
-  </div>,
-];
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-cube";
+import "swiper/css/pagination";
+
+import { EffectCube, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 
 export default function FaqsPage() {
   return (
-    <Layout>
-      <div className="absolute lg:left-72 left-1/3 top-1/3">
-        <AliceCarousel
-          animationType="fadeout"
-          animationDuration={800}
-          disableButtonsControls
-          infinite
-          items={items}
-          mouseTracking
-            />
-      </div>
-    </Layout>
+    <ProyectsLayout title="Te amo amorcito">
+      <Swiper
+        effect={"cube"}
+        grabCursor={true}
+        cubeEffect={{
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        }}
+        pagination={true}
+        modules={[EffectCube, Pagination]}
+        className="absolute w-2/4 -bottom-64 lg:top-32 lg:-left-56"
+      >
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </SwiperSlide>
+      </Swiper>
+    </ProyectsLayout>
   )
 }
