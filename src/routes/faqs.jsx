@@ -6,9 +6,9 @@ import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 import proyecto1 from '../imagenes/proyecto_nucleo2.png'
-import proyecto2 from '../imagenes/software_1.png'
+import proyecto2 from '../imagenes/Software_1.png'
 
-import { EffectCube, Pagination } from "swiper";
+import { EffectCube, Pagination, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 
@@ -17,6 +17,7 @@ export default function FaqsPage() {
     <ProyectsLayout title="Mis proyectos">
       <Swiper
         effect={"cube"}
+        spaceBetween={30}
         grabCursor={true}
         cubeEffect={{
           shadow: true,
@@ -25,8 +26,12 @@ export default function FaqsPage() {
           shadowScale: 0.94,
         }}
         pagination={true}
-        modules={[EffectCube, Pagination]}
-        className="absolute w-2/4 -bottom-64 lg:top-32 lg:-left-56"
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[EffectCube, Pagination, Autoplay]}
+        className="absolute w-2/4 -bottom-64 lg:top-80 lg:-left-56"
       >
         <SwiperSlide>
           <img src={proyecto1}  />
@@ -35,10 +40,10 @@ export default function FaqsPage() {
           <img src={proyecto2} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+          <img src={proyecto1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+          <img src={proyecto2} />
         </SwiperSlide>
       </Swiper>
     </ProyectsLayout>

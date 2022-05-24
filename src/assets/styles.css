@@ -1213,8 +1213,14 @@ select {
 .hidden {
   display: none;
 }
+.h-12 {
+  height: 3rem;
+}
 .h-5 {
   height: 1.25rem;
+}
+.h-10 {
+  height: 2.5rem;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -1225,11 +1231,11 @@ select {
 .w-1\/2 {
   width: 50%;
 }
-.w-2\/4 {
-  width: 50%;
-}
 .w-5 {
   width: 1.25rem;
+}
+.w-2\/4 {
+  width: 50%;
 }
 .max-w-6xl {
   max-width: 72rem;
@@ -1279,8 +1285,9 @@ select {
 .justify-between {
   justify-content: space-between;
 }
-.gap-2 {
-  gap: 0.5rem;
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
 }
 .self-center {
   align-self: center;
@@ -1676,9 +1683,6 @@ select {
   }
   .lg\:top-1\/2 {
     top: 50%;
-  }
-  .lg\:top-32 {
-    top: 8rem;
   }
   .lg\:-left-56 {
     left: -14rem;
