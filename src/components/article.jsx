@@ -2,8 +2,8 @@ import React from 'react'
 
 export function Article({ children }) {
   return (
-    <article className="article text-center lg:w-full lg:py-20 lg:text-left">
-      <div className="mx-auto w-full max-w-6xl px-6">
+    <article className="text-center article lg:w-full lg:py-20 lg:text-left">
+      <div className="w-full max-w-6xl px-6 mx-auto">
         <div className="relative lg:flex">{children}</div>
       </div>
     </article>
@@ -12,8 +12,8 @@ export function Article({ children }) {
 
 export function ArticleContent({ title, children }) {
   return (
-    <div className="article--content pb-16 pr-20 pt-11 lg:pt-16">
-      <div className="mx-auto w-full max-w-3xl">
+    <div className="pb-16 pr-20 article--content pt-11 lg:pt-16">
+      <div className="w-full max-w-3xl mx-auto">
         {title && <ArticleHeader>{title}</ArticleHeader>}
         {children && <ArticleBody>{children}</ArticleBody>}
       </div>
@@ -34,12 +34,12 @@ export function ArticleTitle({ children }) {
 }
 
 export function ArticleBody({ children }) {
-  return <div className="prose mb-8 md:px-16 lg:prose-xl lg:px-0">{children}</div>
+  return <div className="mb-8 prose md:px-16 lg:prose-xl lg:px-0">{children}</div>
 }
 
 export function ArticleMedia({ children }) {
   return (
-    <div className="article--media relative -right-10 py-10 lg:right-0 lg:w-full lg:py-0">
+    <div className="relative py-10 article--media -right-10 lg:right-0 lg:w-full lg:py-0">
       <span className="inline-flex">{children}</span>
     </div>
   )

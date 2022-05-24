@@ -19,7 +19,7 @@ export default function App() {
     <BrowserRouter basename={basename}>
       <ScrollToTop>
         <Routes>
-          <Route path="sobremi" element={<About />} />
+          <Route path="" element={<About />} />
           <Route path="contacto" element={<Contact />} />
           <Route path="proyectos" element={<Faqs />} />
         </Routes>

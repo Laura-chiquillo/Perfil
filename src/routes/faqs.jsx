@@ -1,20 +1,45 @@
 import React from 'react'
 import proyecto from '../imagenes/proyectos.jpg'
-import { Layout } from '../components/layout'
-import { Article, ArticleContent, ArticleMedia } from '../components/article'
+import ProyectsLayout  from '../components/proyectsLayout'
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-cube";
+import "swiper/css/pagination";
+
+import { EffectCube, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 
 export default function FaqsPage() {
   return (
-    <Layout>
-      <Article>
-        <ArticleContent title="FAQ's">
-          <p>Add your FAQ content here.</p>
-        </ArticleContent>
-
-        <ArticleMedia>
-          <img src={proyecto} style={{height:"300px", width:"600px"}} />
-        </ArticleMedia>
-      </Article>
-    </Layout>
+    <ProyectsLayout title="Te amo amorcito">
+      <Swiper
+        effect={"cube"}
+        grabCursor={true}
+        cubeEffect={{
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        }}
+        pagination={true}
+        modules={[EffectCube, Pagination]}
+        className="absolute w-2/4 -bottom-64 lg:top-32 lg:-left-56"
+      >
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </SwiperSlide>
+      </Swiper>
+    </ProyectsLayout>
   )
 }
