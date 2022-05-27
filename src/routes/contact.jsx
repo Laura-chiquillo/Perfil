@@ -33,7 +33,7 @@ export default function Contactpage() {
         </ArticleContent>
 
         <ArticleMedia>
-          <img src={perfil} style={{ height: "300px", width: "500px" }} />
+          <img src={perfil} className="grid self-center w-full" />
         </ArticleMedia>
       </Article>
     </Layout>
