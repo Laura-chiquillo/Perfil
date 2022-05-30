@@ -33,7 +33,7 @@ export default function Contactpage() {
         </ArticleContent>
 
         <ArticleMedia>
-          <img src={perfil} style={{ height: "300px", width: "500px" }} />
+          <img src={perfil} style={{ height: "250px", width: "450px" }} />
         </ArticleMedia>
       </Article>
     </Layout>
