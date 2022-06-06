@@ -9,10 +9,7 @@ export default function AboutPage() {
     <Layout>
       <Article>
         <ArticleContent title="Acerca de mi">
-          <p>Hola, mi nombre es Laura Daniela Chiquillo Leon, tengo 20 años y acutalmente me encuentro estudiando ingenieria de sistemas
-            en la universidad El Bosque.
-          </p>
-          <p></p>
+          <p>Hola, mi nombre es Laura Daniela Chiquillo Leon, tengo 20 años y actualmente me encuentro estudiando ingeniería de sistemas en la universidad El Bosque.</p>
         </ArticleContent>
 
         <ArticleMedia>
